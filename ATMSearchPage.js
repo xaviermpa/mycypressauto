@@ -25,10 +25,11 @@ VerifyATMSearchPage()
     cy.xpath('//*[@id="content_main_button_1"]/span[1]').click();
 
     //Type country name as India
-    cy.xpath('//*[@id="searchInput"]').type('I{downArrow}').select('//*[@id="PlacesAutocomplete__suggestion-ChIJkbeSa_BfYzARphNChaFPjNc"]');
-
+    cy.wait(2000);
+    cy.xpath('//*[@id="searchInput"]').type('India');
+    cy.wait(2000);
     //In drop-down option click option India
-    //cy.xpath('//*[@id="searchInput"]').select('India');
+    cy.xpath('//*[@id="PlacesAutocomplete__suggestion-ChIJkbeSa_BfYzARphNChaFPjNc"]').click();
 
     //Validate ATM Header name is showing as Rajbhavan Road
     cy.wait(3000);
