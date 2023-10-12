@@ -1,5 +1,7 @@
 {
   "BaseURL": "https://www.hsbc.co.in/",
   "LogonURL": "https://www.hsbc.co.in/security/",
-  "UserName": "xavierdbhs@gmail.com"
+  "UserName": "xavierdbhs@gmail.com",
+  "CardApplyUrl":"https://www.accountopening.hsbc.co.in/credit-cards/#!/app/journey/cards",
+  "FullnameSingleCharError":"Please enter minimum of 2 letters for your name to continue with your application."
 }
